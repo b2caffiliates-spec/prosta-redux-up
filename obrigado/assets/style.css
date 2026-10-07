@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaria: #1560a8;
+    --primaria-hover: #1f74c4;
+    --escuro: #0e3a6b;
+    --escuro-2: #134b86;
+    --destaque: #8fd0ff;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+}
+
+header {
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    padding: 40px;
+}
+
+.container {
+    background: white;
+    padding: 40px 25px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.container img {
+    height: auto;
+    width: 150px;
+}
+
+.container h1 {
+    font-size: 1.9em;
+    color: #1a7f37;
+    margin-bottom: 20px;
+}
+
+.agradecimento {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.texto {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.comprovante-btn {
+    display: block;
+    background-color: var(--primaria);
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 16px 10px;
+    border-radius: 8px;
+    margin: 15px 0;
+    transition: 0.2s;
+}
+
+.comprovante-btn:hover {
+    background: var(--primaria-hover);
+}
+
+.whatsapp-btn {
+    display: block;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 16px 10px;
+    border-radius: 8px;
+    margin: 15px 0;
+    transition: 0.2s;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+}
+
+.rodape {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.section_garantia {
+    padding: 40px;
+}
+
+.garantia_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 1100px;
+    margin: auto;
+
+    .garantia_left {
+        height: 100%;
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .garantia_left img {
+        height: auto;
+        width: 340px;
+        max-width: 100%;
+    }
+
+    .garantia_right {
+        height: 100%;
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .garantia_right h1 {
+        font-size: 2em;
+        color: var(--primaria);
+    }
+
+    .container_selos {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .container_selos img {
+        height: auto;
+        width: 140px;
+    }
+
+    .garantia_right b {
+        color: var(--primaria);
+    }
+
+    .garantia_right p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+}
+
+.pessoas_section {
+    padding: 50px 40px;
+    background: linear-gradient(160deg, var(--escuro), var(--escuro-2));
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pessoas_section h1 {
+    font-size: 1.5em;
+    max-width: 800px;
+}
+
+.pessoas_section h1 b {
+    color: var(--destaque);
+}
+
+.pessoas_section .pessoas_sub {
+    margin-top: 12px;
+    max-width: 640px;
+    opacity: .85;
+}
+
+.pessoas_fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 40px;
+}
+
+.pessoa_foto {
+    width: 300px;
+    padding: 8px;
+    border-radius: 22px;
+    background: linear-gradient(160deg, var(--destaque), var(--primaria));
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+
+.pessoa_foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.kit_section {
+    padding: 50px 40px;
+    background: #f4f6f8;
+    color: #222;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.kit_section h1 {
+    font-size: 1.5em;
+    max-width: 800px;
+}
+
+.kit_section h1 b {
+    color: var(--primaria);
+}
+
+.kit_section .kit_sub {
+    margin-top: 12px;
+    max-width: 640px;
+    font-size: 1em;
+    color: #555;
+}
+
+.kit_fotos {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 40px;
+}
+
+.kit_card {
+    width: 260px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+.kit_card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+.kit_card p {
+    color: #222;
+    padding: 14px 16px;
+    font-weight: 600;
+    font-size: .95em;
+}
+
+.kit_card p i {
+    color: var(--primaria);
+    margin-right: 6px;
+}
+
+.vantagens_section {
+    background: #7F8692;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & h1 {
+        text-align: center;
+    }
+}
+
+.vantagens_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 2em;
+}
+
+.vantagem_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 200px;
+    gap: 1em;
+}
+
+.vantagem_div i {
+    font-size: 2em;
+}
+
+.vantagem_div p {
+    text-align: center;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_top {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+}
+
+.footer_options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.5em;
+}
+
+.option_div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1em;
+    top: 0;
+}
+
+.option_div h1 {
+    font-size: 1.5em;
+}
+
+.option_div img {
+    height: auto;
+    width: 250px;
+}
+
+#correios_img {
+    height: auto;
+    width: 200px;
+}
+
+#seguranca_icones {
+    height: auto;
+    width: 200px;
+}
+
+.footer_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+
+    & a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.footer_bottom {
+    padding: 50px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: gray;
+}
+
+.footer_copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 500;
+    color: white;
+    background: black;
+    text-align: center;
+}
+
+@media(max-width: 1100px) {
+    .garantia_container {
+        width: 100% !important;
+    }
+}
+
+@media(max-width: 900px) {
+    header {
+        padding: 30px 10px;
+    }
+
+    .footer_bottom {
+        padding: 30px 10px !important;
+        text-align: justify;
+    }
+
+    .option_div {
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 865px) {
+    header {
+        padding: 30px 0px;
+    }
+
+    .container h1 {
+        font-size: 1.3em !important;
+    }
+}
+
+@media(max-width: 800px) {
+    .section_garantia {
+        padding: 30px 16px !important;
+    }
+
+    .garantia_container {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .garantia_left {
+        width: 100% !important;
+    }
+
+    .garantia_left img {
+        width: 300px !important;
+    }
+
+    .garantia_right {
+        width: 100% !important;
+        margin-top: 30px;
+    }
+
+    .garantia_right h1 {
+        font-size: 1.8em !important;
+        text-align: center;
+    }
+
+    .garantia_right img {
+        margin: auto !important;
+        margin-top: 20px !important;
+    }
+
+    .garantia_right p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+        text-align: left;
+    }
+}
+
+@media(max-width: 765px) {
+    .kit_section,
+    .pessoas_section {
+        padding: 30px 16px;
+    }
+
+    .pessoa_foto {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .kit_card {
+        width: 100%;
+        max-width: 360px;
+    }
+}
